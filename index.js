@@ -9,6 +9,7 @@ async function startBot() {
     const sock = makeWASocket({
         auth: state,
         printQRInTerminal: true // สั่งให้โชว์ QR Code บน Console ของ Pterodactyl
+        qrTimeout: 120000 // 
     });
 
     // 3. ติดตามสถานะการเชื่อมต่อ และพิมพ์ QR Code
